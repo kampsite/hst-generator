@@ -1,0 +1,415 @@
+/* font-family: 'Staatliches',cursive; */
+/* font-family: 'Roboto',sans-serif; */
+/* color: #15d8b9; */
+/* color: #ae6250; */
+* {
+    --fontSize: 16rem;
+
+}
+
+body {
+    font-family: 'Roboto', cursive;
+    background-color: #fff;
+    color: #383E53;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.btn {
+    font-family: 'Staatliches', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h4:after {
+    content: '';
+    display: block;
+    border: 1px solid #15d8b9;
+    width: 4rem;
+    margin: .7rem auto;
+}
+
+p,
+li {
+    line-height: 2;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    border: 2px solid #15d8b9;
+    width: 7rem;
+    margin: 1rem auto;
+
+}
+
+.container {
+    max-width: 960px;
+}
+
+
+
+/* *************************************HEADER MOBILE************************************************** */
+header {
+    background-image: url(../assets/545489-PJW07A-562.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.header__logo {
+    margin-top: 2%;
+}
+
+
+.header__logo::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #15d8b9;
+}
+
+.logo__link,
+.logo__text {
+    font-size: 4rem;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+
+.logo__text {
+    color: #15d8b9;
+    font-size: 6rem;
+}
+
+.header__container {
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header__title {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header__title button {
+    margin-top: 7%;
+}
+
+
+.btn-generator {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-generator:hover {
+    border-color: #1D1C1F;
+    background-color: #fff;
+}
+
+.btn-generator:focus {
+    box-shadow: none;
+}
+
+/* ************************************************** ABOUT SECTION ************************************************** */
+
+.about__info {
+    text-align: center;
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.about__nav {
+    background-color: #365F92;
+    font-weight: bold;
+    color: white;
+}
+
+.about__nav--list {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: white;
+}
+
+.about__nav--list a {
+    color: white;
+    /* color: #383E53; */
+    transition: .2s;
+    line-height: 2.5;
+}
+
+.about__nav--img,
+.figure,
+.figure-img {
+    padding: 0;
+    margin: 0;
+}
+
+.about__nav--list a:hover {
+    color: #15d8b9;
+}
+
+
+.about__history {
+    padding-top: 2rem;
+}
+
+.about__info--cykle {
+    position: relative;
+    font-weight: bold;
+    height: 50vh;
+}
+
+
+.about__info--cykle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/223.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: opacity(90%);
+    filter: opacity(90%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.about__cykle--list {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.about__cykle--list:before {
+    content: '';
+    display: block;
+    border: 1px solid whitesmoke;
+    width: 6rem;
+    margin: 0.5rem auto;
+}
+
+.about__cykle--list:after {
+    content: '';
+    display: block;
+    border: 1px solid whitesmoke;
+    width: 6rem;
+    margin: 0.5rem auto;
+}
+
+.about__conditions {}
+
+@media (max-width: 576px) {
+    .about__nav--list {
+        text-align: center;
+    }
+}
+
+/* ************************************************** FORM SECTION ************************************************** */
+
+
+.calculator__row {
+    padding: 5%;
+}
+
+.calculator__column {
+    padding-top: 2%;
+}
+
+/* .calculator:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("assets/223.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: opacity(10%);
+    filter: opacity(10%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+
+
+.calculator__generate {
+    padding: 15px;
+}
+
+
+label {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #60637A;
+}
+
+.form *:required:valid {
+    box-shadow: 0 0 3px 1px green;
+    color: green;
+    background-image: url(icon-ok.png);
+}
+
+.form *:focus:required:invalid {
+    box-shadow: 0 0 3px 1px red;
+    color: red;
+    background-image: url(icon-error.png);
+}
+
+/* ************************************************** TABLE GENERATOR ************************************************** */
+
+.table {
+    display: none;
+    padding: 1rem 0;
+}
+
+.table__plan,
+.table__buttons {
+    background-color: white;
+    padding: 0.8rem;
+}
+
+.table__buttons button {
+    margin: 0.3rem;
+}
+
+
+th,
+td {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+td:nth-of-type(2) {
+    background-color: yellow;
+}
+
+
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    #my-table {
+        font-size: 0.7rem;
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* ----------------------------------ARROW------------------------------------------------- */
+
+.header__downArrow {
+    display: none;
+    z-index: 2;
+}
+
+.show {
+    display: block;
+}
+
+button.arrow {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    box-sizing: border-box;
+    font-size: 2.4rem;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #15d8b9;
+    color: white;
+    overflow: hidden;
+    transition: .2s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.arrow:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 13px 0 #15d8b9;
+}
+
+
+
+button.arrow i {
+    text-shadow: 0 -20px 0 white, 0 -40px 0 white;
+    transform: translateY(68px);
+    animation: arrow 1s linear infinite;
+}
+
+button.arrow:hover i {
+    animation-duration: .7s;
+}
+
+@keyframes arrow {
+    100% {
+        transform: translateY(-92px)
+    }
+}
+
+
+/* ----------------------------------------FORM--------------------------------------------------------- */
+
+
+
+/* **************************************HEADER DESKTOP********************************************** */
